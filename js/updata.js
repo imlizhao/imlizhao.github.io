@@ -17,7 +17,6 @@ const input_title = document.getElementById('input_title')
 const input_tag = document.getElementById('input_tag')
 const input_content = document.getElementById('input_content')
 
-
 //如果有id，发送请求获取id
 const id = location.search.split('?')[1]
 let atricleObject
@@ -147,3 +146,9 @@ function updataAricle() {
 }
 //10秒保存一次
 setInterval(updataAricle, 10000)
+
+function saveAricle()
+{
+    // updataAricle;
+    window.location.href='index.html';
+}
